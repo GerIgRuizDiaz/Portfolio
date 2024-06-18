@@ -1,0 +1,24 @@
+---
+import ExperienceItems from "./ExperienceItems.astro";
+const EXPERIENCIE = [
+  {
+    date: "Diciembre/2023  - (Actualmente continuo como colaborador en la ONG)",
+    title: "Desarrollador Full Stack en Awaq ONGD (Contrato de Practica)",
+    description:
+      "Con un equipo de Desarrolladores y diseñadores, creamos una pagina completa para el Campus de Awaq , con creacion y autenticacion de usuarios, consumo de informacion desde la Base de datos, dashboards de usuario y administradores.",
+    link: "",
+  },
+];
+---
+
+<ol
+  class="relative border-s md:ms-20 justify-center lg:max-w-[1000px] border-gray-200 dark:border-gray-700"
+>
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li>
+        <ExperienceItems {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
